@@ -1,0 +1,123 @@
+.foot-container {
+    display: block;
+}
+.foot-start {
+    display: flex;
+}
+.foot_intro {
+    padding: 24px;
+    flex: 1;
+}
+.foot_intro_logo {
+    flex: 1;
+}
+.foot_intro_logo p{
+    margin-top: 24px;
+    font-size: 95%;
+    color: #637381;
+}
+.foot_intro_links, .foot_info p, .foot_address p{
+    color: #212b36;
+    font-size: 95%;
+    font-weight: 700;
+}
+.foot_intro_links p {
+    padding-top: 47px;
+}
+.foot_intro_links_each {
+    margin-top: 16px;
+}
+.foot_intro_links_each button {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot_intro_links_each button:hover {
+    background-color: rgba(99, 115, 129, 0.08);
+}
+.foot_intro_links_each button:active {
+    background-color: rgba(105, 108, 255, 0.3);
+    transition: background-color 0.1ms ease;
+}
+.foot_intro_links_each img {
+    width: 20px;
+    height: 20px;
+}
+.foot_info {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+}
+.foot_info_about {
+    margin: 4px;
+    flex: 1;
+}
+.foot_info_vs {
+    margin: 4px;
+    flex: 1;
+}
+.foot_address {
+    padding: 32px;
+    flex: 1;
+    font-size: 115%;
+}
+.foot_address a {
+    font-weight: 500;
+    word-wrap:break-word;
+}
+.foot_info a, .foot_address a{
+    display: inline-block; 
+    margin-top: 12px;
+    text-decoration: none;
+    color: #637381;
+    font-size: 80%;
+}
+.foot_info a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.foot-end{
+    color: transparent;
+    text-align: center; 
+    font-size: 13px; 
+    color: #637381;
+    margin-bottom: 70px;
+}
+
+@media(max-width: 900px){
+    .foot-start{
+        display: block;
+    }
+    .foot_intro, .foot_info, .foot_address{
+        padding: 15px;
+    }
+    .foot_address {
+        padding-bottom: 40px;
+    }
+    .foot_address p{
+        font-size: 80%;
+    }
+    .foot_info_about, .foot_info_vs {
+        margin: 0;
+    }
+    .foot_info_about p, .foot_info_vs p {
+        font-size: 95%;
+    }
+    .foot_intro_links_each button {
+        padding: 6px;
+    }
+    .foot_intro_links p {
+        padding-top: 28px;
+    }
+    .foot-end {
+        margin-bottom: 32px;
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,253 @@
+.main-confess {
+    padding: 120px 24px;
+    background-color: #F4F6F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-confess h2 {
+    width: 50%;
+    font-size: 300%;
+    word-wrap: break-word;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.form-cf {
+    /* height: 662px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    overflow: hidden;
+}
+.form_cf_image {
+    display: flex;
+}
+.cf-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+.form_cf_description img {
+    width: 48px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_cf_description p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 16px 0 40px;
+    color: #212B36;
+    opacity: 0.9;
+    font-size: 105%;
+    font-weight: 600;
+}
+.cf-name {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+.cf-name h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.cf-name p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4px 0 0;
+    font-size: 95%;
+    color: #212B36;
+    opacity: 0.7;
+    font-weight: 600;
+}
+.prev-cf, .next-cf {
+    position: absolute;                       
+    transform: translateY(150%);
+    display: block;
+    z-index: 1;
+    background-color: transparent;
+}
+.prev-cf {        
+    left: 10px;                     
+}
+.next-cf {          
+    right: 10px;
+}
+.prev-cf button, .next-cf button {
+    font-weight: 500;
+    margin: 0 10px;
+
+    display: flex;          
+    justify-content: center;  
+    align-items: center;       
+    cursor: pointer;
+    width: 36px;
+    line-height: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 110%;
+    color: rgba(99, 115, 129, 0.8);
+    border-radius: 50%;
+}
+.prev-cf button:hover, .next-cf button:hover {
+    background-color: rgba(99, 115, 129, 0.08);
+    font-weight: 700;
+    color: black;
+}
+
+.prev-cf button:active, .next-cf button:active {
+    background-color: rgba(58, 58, 58, 0.3);
+    transition: background-color 0.1ms ease;
+}
+
+.form_cf_image-slide {
+    margin: 0px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cf-slide {
+    max-width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: max-content; 
+    position: relative;
+    transition: transform 0.5s ease;
+}
+.slide1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 8px;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+.slide1 img {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 48px;   
+    opacity: 0.5;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer; 
+}
+.slide1 img.active{
+    width: 90px;
+    opacity: 1;
+}
+
+/* Hiệu ứng slideout: Văn bản trượt ra bên trái */
+.slideout {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+    to {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+    }
+}
+
+/* Hiệu ứng slidein: Văn bản mới trượt vào từ bên phải */
+.slidein {
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        /* opacity: 0; */
+    }
+    to {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+}
+
+/* Hiệu ứng slideout: Văn bản trượt ra bên phải */
+.slideout1 {
+    animation: slideOut1 0.5s forwards;
+}
+
+@keyframes slideOut1 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hiệu ứng slidein: Văn bản mới trượt vào từ bên trái */
+.slidein1 {
+    animation: slideIn1 0.5s forwards;
+}
+
+@keyframes slideIn1 {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .main-confess {
+        padding: 80px 0;
+    }
+    .main-confess h2{
+        display: none;
+    }
+    .prev-cf, .next-cf {
+        display: none;
+    }
+    .form-cf{
+        width: 100%;
+        padding: 12px;
+    }
+    .form_cf_description img {
+        width: 36px;
+    }
+    .form_cf_description p {
+        font-size: 95%;
+        /* word-wrap: break-word; */
+    }
+    .cf-name h1{
+        font-size: 110%;
+    }
+    .form_cf_image-slide {
+        margin: 0px 30px;
+    }
+    .slide1 {
+        margin: 0 24px;
+    }
+}

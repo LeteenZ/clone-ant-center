@@ -1,0 +1,177 @@
+.main-container {
+ display: block;
+}
+.main-intro {
+    display: flex;
+    margin: 0 12px;
+}
+.main_intro_paragraph {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.main_intro_img {
+    padding: 12px;
+    margin-top: -30px;
+    width: 170%;
+}
+.main_intro_img img {
+    width: 100%;
+    height: auto;
+}
+.main_intro_p1 {
+    margin: 16px 0;
+    font-size: 300%;
+    font-weight: 700;
+}
+.main_intro_p12 {
+    color: #696CFF;
+}
+.main_intro_p2 {
+    margin: 32px 0 0;
+    color: #637381;
+    font-size: 110%;
+    font-weight: 500;
+}
+.main_intro_profession {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.profession {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    margin: 0 3% 3% 0;
+    background-color: transparent;
+    text-align: center;
+    color: #212b36;
+    font-weight: 700;
+    border: 1px black;
+    line-height: 120%;
+    font-size: 105%;
+    overflow: hidden;
+}
+.profession img {
+    height: 1.15em;
+    vertical-align: middle; 
+    margin: 0 0 0 8px;
+}
+.main_intro_p3 {
+    margin-top: 32px;
+    display: flex;
+}
+.btnSign_up2 {
+    line-height: 36px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #696cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 167px;
+    height: 48px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.btnSign_up2_Slogan {
+    color: #637381;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.main_intro_p4 hr {
+    margin: 32px 0;
+    border: 0;
+    width: auto;
+    border-top: 1px dashed rgba(145, 158, 171, 0.24);
+}
+.main_intro_p5 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.o5.p1, .o5.p2, .o5.p3{
+    display: flex;
+    font-size: 110%;
+    color: #637381;
+}
+.o5.p1 span, .o5.p2 span, .o5.p3 span {
+    color: #212b36;
+    font-size: 150%;
+    font-weight: 700;
+}
+.o5.p1 div{
+    border-radius: 25px; 
+    background-color: #ffebc2; 
+    width: 25px; 
+    height: 25px;
+}
+.o5.p2 div {
+    border-radius: 25px; 
+    background-color: #ffd7ce; 
+    width: 25px; 
+    height: 25px;
+}
+.o5.p3 div {
+    border-radius: 25px; 
+    background-color: #cfede0; 
+    width: 25px; 
+    height: 25px;
+}
+@media(max-width: 900px){
+    .main-intro{
+        margin: 0 6px;
+    }
+    .main_intro_p2{
+        margin: 0;
+        font-size: 95%;
+        font-weight: 500;
+    }
+    .main_intro_img{
+        display: none;
+    }
+    .main_intro_p1 {
+        font-size: 160%;
+    }
+    .main_intro_p11 {
+        color:#637381;
+        margin: 12px 0 0;
+        opacity: 0.9;
+    }
+    .main_intro_p12 {
+        margin-bottom: 5px;
+    }
+    .main_intro_p3 {
+        margin-top: 0;
+    }
+    .main_intro_p4 hr{
+        margin: 24px 0 20px;
+    }
+    .o5.p1, .o5.p2, .o5.p3 {
+        font-size: 90%;
+        margin-right: 5px;
+    }
+    .o5.p1 div, .o5.p2 div, .o5.p3 div{
+        margin-top: -6px;
+        width: 22px;
+        height: 22px;
+    }
+    .o5.p1 span, .o5.p2 span, .o5.p3 span {
+        font-size: 120%;
+    }
+    .profession {
+        font-size: 110%;
+    }
+    .btnSign_up2_Slogan {
+        font-size: 90%;
+    }
+}
